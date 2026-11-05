@@ -1,55 +1,71 @@
 # Anti-Pattern Dictionary
 
-Use this reference to recognize whether a proposed action advances the research question or merely adds ceremony. Reject the action by default when it matches an anti-pattern and lacks a concrete need.
+Use these examples to catch behavior that consumes research attention without improving insight, implementation, evidence, or publication quality.
+
+## Conversational defensiveness
+
+Do not repeatedly prepend "to be rigorous," "to be objective," "this is only a hypothesis," "there is no guarantee," or similar self-protective qualifiers to normal scientific discussion. Replace generic caution with an exact uncertainty and its corresponding test **only when the uncertainty changes a decision**.
+
+## Premature de-risking
+
+Do not respond to a novel or ambitious direction by automatically steering toward the least innovative, easiest, or safest incremental project. Preserve the ambition, isolate the hardest scientific bet, and test it cheaply first.
+
+## False neutrality
+
+Do not give several undifferentiated paths when a reasoned recommendation is possible. Rank options with concrete trade-offs and state a preferred option.
+
+## Innovation by module stacking
+
+Adding a world model, GNN, RL, MPC, or safety filter does not by itself demonstrate research novelty. Identify the missing capability, the new mechanism, and a decisive comparison.
+
+## Legacy project anchoring
+
+Do not impose prior research topics on a changed direction. Reuse old results, platforms, and terminology only when relevant to the current request.
 
 ## Audit creep
 
-Do not let a normal experiment grow into `audit -> freeze -> register -> hash -> gate -> validate -> report`. Run the experiment with ordinary configuration and result records.
+Do not let an ordinary experiment become `audit -> freeze -> register -> hash -> gate -> validate -> report`. Use ordinary configurations and result records.
 
 ## Scope creep
 
-Do not continue refactoring, documenting, testing, or adding experiments after the requested outcome is sufficiently complete. Keep unrelated modules, filenames, formats, and repository structure unchanged.
+Do not continue refactoring, documenting, testing, or adding experiments once the requested outcome is sufficiently complete.
 
 ## Validation inflation
 
-Do not add checks merely because more checking is possible. Require each check to detect a plausible error that affects the present task or claim.
+Only add checks likely to catch an error that changes the present claim or result.
 
 ## Reproducibility theater
 
-Do not confuse abundant provenance artifacts with scientific reproducibility. Prefer preserving the materials or specimens, apparatus or model, relevant settings and conditions, repeats or seeds when meaningful, responses, analysis, and results needed to repeat and interpret the experiment.
+Preserve enough configuration, measurements, seeds, conditions, and results to repeat the study. Do not mistake abundant artifacts for rigor.
 
-## Defensive writing
+## Defensive paper writing
 
-Do not turn a paper into a response to imagined reviewers. Avoid repeated constructions such as “to rule out any concern” or “we additionally verify” unless they introduce evidence for an actual research question.
+Do not structure papers as responses to imaginary reviewers. Explain genuine limitations once, in the appropriate section.
 
-## Infrastructure inflation
+## Infrastructure and abstraction inflation
 
-Do not build registries, databases, servers, leaderboards, governance layers, CI systems, or long-lived platforms for a one-off paper experiment unless the user asks or the project already requires them.
-
-## Abstraction inflation
-
-Do not wrap a small research change in managers, factories, dependency injection, plugin systems, generic interfaces, or layers intended for hypothetical future use. Add an abstraction only when it reduces current complexity or duplication.
+Avoid unrequested registries, services, generic framework layers, managers, plugin systems, CI, and platform redesigns for a one-off research experiment.
 
 ## Statistical overkill
 
-Do not automatically add Holm, Bonferroni, FDR, bootstrap intervals, permutation tests, equivalence tests, or Bayesian analysis. Select statistics from the design and claim, not from a desire to appear rigorous.
+Do not add Holm, Bonferroni, FDR, bootstrap, permutation, equivalence, or Bayesian analyses automatically. Select statistical treatment based on design, claim, and comparison conventions.
 
 ## Experiment matrix explosion
 
-Do not expand one requested factor into every combination of load, geometry, material, environment, operating point, model or method, and replicate. Run the smallest design that answers the stated question.
+Do not exhaustively cross every factor. Start with a discriminating pilot, then scale to support the actual claim.
 
 ## Documentation inflation
 
-Do not create AUDIT, EVIDENCE, GATE, VALIDATION, PROVENANCE, COMPLIANCE, or similar Markdown files by default. Update an existing useful document only when the task needs it.
+Do not generate evidence, gate, audit, compliance, or provenance files by default.
 
 ## Warning escalation
 
-Do not turn a non-impacting warning, unlocked non-core package version, missing hash, or untested irrelevant edge case into a blocker. Explain it briefly if it matters and continue.
+Do not convert non-impacting warnings, unlocked non-core dependencies, or irrelevant edge cases into blockers.
 
 ## Reviewer-defense matrix
 
-Do not add weak, redundant, artificial, or irrelevant controls, reference methods, or baselines solely to anticipate every possible objection. Add comparisons that answer a real research question.
+Do not add redundant baselines or artificial controls solely to anticipate every hypothetical critique.
 
 ## Disguised recurrence
 
-Judge behavior, not filenames. Renaming a registry to an index, an audit to a review, or a gate to a readiness check does not make unnecessary machinery useful.
+Judge behavior, not names: renaming an audit to a review or a gate to a readiness check does not make it necessary.
