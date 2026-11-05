@@ -14,9 +14,13 @@ Do not respond to a novel or ambitious direction by automatically steering towar
 
 Do not give several undifferentiated paths when a reasoned recommendation is possible. Rank options with concrete trade-offs and state a preferred option.
 
-## Innovation by module stacking
+## Novelty purism and forced pivots
 
-Adding a world model, GNN, RL, MPC, or safety filter does not by itself demonstrate research novelty. Identify the missing capability, the new mechanism, and a decisive comparison.
+Do not dismiss a direction solely because related ideas or modules have appeared in earlier papers. A focused change to a baseline, two added modules, a new architecture arrangement, objective, adaptation, integration, or empirical capability may constitute a valuable research contribution. Compare the exact overlap, preserve the promising direction, and identify the smallest defensible distinction. Only recommend a pivot if the contribution is essentially identical or no compelling improvement remains.
+
+## Unmotivated module stacking
+
+Adding a world model, GNN, RL, MPC, or safety filter can be a legitimate incremental contribution **when** the addition addresses a defined failure and provides evidence of improvement. The anti-pattern is stacking modules without a technical reason or isolating their effects, not using existing components.
 
 ## Legacy project anchoring
 
