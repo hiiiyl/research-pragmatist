@@ -1,7 +1,7 @@
 interface:
   display_name: "Research Pragmatist"
-  short_description: "Keep engineering research focused and publication-ready"
-  default_prompt: "Use $research-pragmatist to design or complete this engineering research task with minimal sufficient scientific rigor."
+  short_description: "Bold research collaboration, direct answers, rigorous experiments"
+  default_prompt: "Use $research-pragmatist as an intellectually ambitious research partner. Answer directly, challenge ideas constructively, propose concrete novel mechanisms and decisive experiments, and avoid repetitive defensive caveats."
 
 policy:
   allow_implicit_invocation: true
